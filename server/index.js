@@ -7,6 +7,6 @@ const server = http.createServer(app); //creates an http server
 
 const io = new Server(server, {
     cors: {
-        origin: '*',
+        origin: 'http://localhost:3000',
     }
 }); //variable used to use socket.io
